@@ -119,7 +119,7 @@ calc_mean_nan = function(vec) {
 }
 vec = c(1:19, NaN)
 
-print("#10. Write a function that takes a numeric vector and calculates the mean of the observations in the vector.")
+print("#11. Modify your function in the previous question so that it can handle a numeric vector with missing values.")
 print(calc_mean(vec))
 print(calc_mean_nan(vec))
 
