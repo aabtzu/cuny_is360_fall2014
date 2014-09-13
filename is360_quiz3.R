@@ -22,8 +22,10 @@ print (balance)
   
 #3. Create a numeric vector of length 20 and then write code to calculate the sum of every third element of the vector you have created.
 vec = (1:20)
-# non loop implementation
-total = sum(vec[vec %% 3 == 0])
+
+total = sum(vec[vec %% 3 == 0]) # non loop implementation
+
+# loop implementation
 total3 = 0
 for (i in 1:length(vec)) {
   if (i %% 3 == 0) {
