@@ -1,0 +1,44 @@
+---
+title: "OmniChannel Project"
+author: "Rosally Daniel"
+date: "October 21, 2014"
+output: html_document
+---
+
+#To measure the ROI of an omnichannel intitiative, each store groups or district will assess the
+#usage of the new tools deployed to the field and ecommerce associates. The goal is to increase
+#sales by giving the customer a seamless shopping experience along multiple channels. The table #below is a compilation of KPI's from City Stores Group 1 from Fiscal Year 2013.
+
+```{r set-up}
+require (markdown)
+```
+
+#Pilot analysis will be done with City Stores Group 1.
+
+
+# From this table, there are two variables we are more interested in. We'd like to know the 
+#mean and the median average of Sales, and correlate Sales with the omnisales dollars. 
+```{r}
+x="Sales"
+x=c(867024,814990,545751,596967,62975,122975,556832,285247,517389,637739,591032,689789,365569,584156,549009,513544,566475,668385,682872,656738,859417,490294,523044,676736,482331,333963,355303,281205,281707,283107,303355,607615,272143,581023,316419,750559,397003,386077,474997,361000,327959,336262,414173)
+print (x)
+summary(x)
+y="% to Total"
+y=c(18.60,4.50,2.90,2.50,20.00,4.20,8.30,4.80,3.00,4.80,2.50,11.00,17.00,5.40,3.10,3.65,0.50,1.69,7.97,0.57,1.61,2.00,0.96,3.30,3.90,10.60,8.20,11.90,2.10,8.30,5.75,11.04,4.63,2.83,4.59,2.12,6.58,2.10,2.35,9.68,1.41,2.61,2.68)
+cor(x,y)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
